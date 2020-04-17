@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2338A8"
+    android:background="#F3F4F8"
     tools:context=".MainActivity">
 
     <ImageView
@@ -21,27 +21,34 @@
         app:srcCompat="@drawable/ic_launcher_background"
         tools:ignore="VectorDrawableCompat" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="361dp"
-        android:layout_height="47dp"
-        android:hint=" EMAIL/PHONE"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.28" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="361dp"
-        android:layout_height="47dp"
-        android:text="SIGN"
+        android:layout_height="53dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/button"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="361dp"
+        android:layout_height="53dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="             Email ID/Phone"
+        android:inputType="textPersonName"
+        android:textColor="#0E0C0C"
+        android:textColorHint="#2E2B2B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.622" />
 </androidx.constraintlayout.widget.ConstraintLayout>
