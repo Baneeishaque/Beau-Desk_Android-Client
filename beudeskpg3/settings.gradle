@@ -1,0 +1,2 @@
+rootProject.name='beudesk pg3'
+include ':app'
